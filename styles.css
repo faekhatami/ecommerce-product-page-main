@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --Orange: hsl(26, 100%, 55%);
+    --Pale-orange: hsl(25, 100%, 94%);
+    --Very-dark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--White);
+    max-width: 375px;
+    width: 100%;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu-icon {
+    border: none;
+}
+
+.menu-icon img {
+    background-color: var(--White);
+}
+
+.website-logo {
+    margin-bottom: 5px;
+    position: absolute;
+    left: 50px;
+}
+
+.cart-icon {
+    border: none;
+    position: absolute;
+    right: 70px;
+}
+
+.cart-icon img {
+    background-color: var(--White);
+}
+
+.profile-image {
+    width: 25px;
+    position: absolute;
+    right: 20px;
+}
+
+.product-one {
+    width: 100%;
+}
