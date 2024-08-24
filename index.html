@@ -5,39 +5,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | E-commerce product page</title>
+  <title>Frontend Mentor | Ecommerce Product Page</title>
+  <meta name="description" content="Shop the Fall Limited Edition Sneakers. A blend of comfort and style.">
+  <meta name="keywords" content="sneakers, limited edition, fall collection, fashion, footwear">
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-  <main class="container">
-    <header>
-      <button class="menu-icon" aria-label="open menu"><img src="./images/icon-menu.svg" alt="menu icon"></button>
-      <img class="website-logo" src="./images/logo.svg" alt="website logo">
-      <button class="cart-icon" aria-label="open cart"><img src="./images/icon-cart.svg" alt="cart icon"></button>
-      <img class="profile-image" src="./images/image-avatar.png" alt="profile image">
-      <nav class="mobile-nav"></nav>
-      <section class="cart"></section>
-    </header>
-    <section class="product-image">
-      <img class="product-one" src="./images/image-product-1.jpg">
-    </section>
-    <section class="product-info">
-      <article>
-        <h2></h2>
-        <h1></h1>
-        <p></p>
-      </article>
-      <div>
-        <p></p>
-        <p></p>
+  <header>
+    <button class="menu-button" aria-label="Open navigation menu">
+      <img src="./images/icon-menu.svg" alt="open navigation menu">
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav class="navigation-menu">
+      <button class="close-button" aria-label="Close navigation menu">
+        <img src="./images/icon-close.svg" alt="close navigation menu">
+      </button>
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <img class="logo-image" src="./images/logo.svg" alt="website logo">
+
+    <div class="cart-section">
+      <button class="cart-button" aria-label="View cart">
+        <span class="cart-count" aria-live="polite">0</span>
+        <img src="./images/icon-cart.svg" alt="shopping cart">
+      </button>
+      <div class="cart-dropdown" aria-label="Cart contents">
+        <h2>Cart</h2>
+        <div class="cart-item">
+          <img class="cart-item-image" src="./images/image-product-1-thumbnail.jpg"
+            alt="Fall Limited Edition Sneakers thumbnail">
+          <div class="cart-item-details">
+            <p>Fall Limited Edition Sneakers</p>
+            <p>Quantity: 1</p>
+            <p>$125.00</p>
+          </div>
+          <button class="remove-item-button" aria-label="Remove item from cart">
+            <img class="trash" src="./images/icon-delete.svg" alt="Remove item">
+          </button>
+        </div>
+        <button class="checkout-button">Checkout</button>
       </div>
-      <div>
-        <button></button>
-        <button></button>
+    </div>
+
+    <img class="avatar-image" src="./images/image-avatar.png" alt="profile photo">
+  </header>
+
+  <main class="container">
+    <!-- Product Gallery -->
+    <section class="product-gallery column">
+      <div class="main-image">
+        <img src="./images/image-product-1.jpg" alt="Fall Limited Edition Sneakers" class="product-image">
+        <button class="previous arrow" aria-label="View previous image">
+          <img src="./images/icon-previous.svg" alt="previous image">
+        </button>
+        <button class="next arrow" aria-label="View next image">
+          <img src="./images/icon-next.svg" alt="next image">
+        </button>
+      </div>
+      <div class="small-image">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail of product 1" class="thumbnail-image">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail of product 2" class="thumbnail-image">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail of product 3" class="thumbnail-image">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail of product 4" class="thumbnail-image">
+      </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="product-details column">
+      <h2>SNEAKER COMPANY</h2>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+        they'll withstand everything the weather can offer.</p>
+
+      <!-- Pricing Section -->
+      <div class="pricing">
+        <div class="new-price">
+          <p>$125.00</p>
+          <span class="discount">50%</span>
+        </div>
+        <div class="previous-price">
+          <p>$250.00</p>
+        </div>
+      </div>
+
+      <!-- Cart Action -->
+      <div class="box-cart">
+        <div class="quantity-button">
+          <button class="button minus" id="minus" aria-label="Decrease quantity">
+            <img src="./images/icon-minus.svg" alt="decrease quantity">
+          </button>
+          <span id="quantity">0</span>
+          <button class="button plus" id="plus" aria-label="Increase quantity">
+            <img src="./images/icon-plus.svg" alt="increase quantity">
+          </button>
+        </div>
+        <button class="cart-button add-to-cart">
+          <img src="./images/icon-cart.svg" alt="Add to cart">
+          <span>Add to cart</span>
+        </button>
       </div>
     </section>
   </main>
+
   <script src="./script.js"></script>
 </body>
 
